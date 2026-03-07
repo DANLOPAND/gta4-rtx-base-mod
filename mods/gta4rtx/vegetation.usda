@@ -1095,6 +1095,148 @@ over "RootNode"
         )
         {
         }
+
+        over "mesh_B17F9155FF717BF5" (
+            references = None
+        )
+        {
+            def Xform "ref_a3099156b59741cdb43a1ac63a13ddd0" (
+                prepend references = @./assets/vegetation/Beech_03.usd@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 90)
+                    float3 xformOp:scale = (0.75, 0.75, 0.75)
+                    double3 xformOp:translate = (-1.4210854715202004e-12, 2.8421709430404007e-12, 0.8)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "World"
+                    {
+                        over "Beech03_Leaves"
+                        {
+                            over "Beech03_Leaves"
+                            {
+                                uniform bool doubleSided = 1
+                            }
+                        }
+
+                        over "Looks"
+                        {
+                            over "Beech_03_Mat"
+                            {
+                                over "Shader"
+                                {
+                                    asset inputs:diffuse_texture = @./assets/vegetation/textures/Beech_Large_Color.a.rtex.dds@
+                                    asset inputs:normalmap_texture = @./assets/vegetation/textures/Beech_Large_OTH_Normal.n.rtex.dds@
+                                    custom asset inputs:reflectionroughness_texture = @./assets/vegetation/textures/Beech_Large_Roughness.r.rtex.dds@
+                                    custom float inputs:subsurface_measurement_distance = 0.75
+                                    custom asset inputs:subsurface_single_scattering_texture = @./assets/vegetation/textures/Beech_Large_Subsurface.a.rtex.dds@
+                                    custom color3f inputs:subsurface_transmittance_color = (0.5199516, 0.21096884, 0.94208497)
+                                    custom float inputs:subsurface_volumetric_anisotropy = -0.1
+                                }
+                            }
+
+                            over "AmericanBeechBark_Mat"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:reflectionroughness_texture = @./assets/vegetation/textures/AmericanBeechBark_Roughness.r.rtex.dds@
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_4CF79E77560999F5" (
+            references = None
+        )
+        {
+        }
+
+        over "mesh_D58FCF4E4883804D" (
+            references = None
+        )
+        {
+        }
+
+        over "mesh_5E12450A12CDDAD7" (
+            references = None
+        )
+        {
+            def Xform "ref_ce7f8a855bc0430c8de9d41bd2dccc8f" (
+                prepend references = @./assets/vegetation/LondonPlane.usd@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 146.5)
+                    float3 xformOp:scale = (0.9, 0.9, 0.9)
+                    double3 xformOp:translate = (-5.684341886080802e-14, 1.1368683772161603e-13, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "World"
+                    {
+                        over "LondonPlane_Leaves"
+                        {
+                            over "LondonPlane_Leaves"
+                            {
+                                uniform bool doubleSided = 1
+                            }
+                        }
+
+                        over "Looks"
+                        {
+                            over "LondonPlane_Mat"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:reflectionroughness_texture = @./assets/vegetation/textures/LondonPlane_Roughness.r.rtex.dds@
+                                    custom float inputs:subsurface_measurement_distance = 0.75
+                                    custom asset inputs:subsurface_single_scattering_texture = @./assets/vegetation/textures/LondonPlane_Subsurface.a.rtex.dds@
+                                    custom color3f inputs:subsurface_transmittance_color = (0.05017815, 0.30897692, 0.5907336)
+                                    custom float inputs:subsurface_volumetric_anisotropy = -0.1
+                                }
+                            }
+
+                            over "LondonPlaneBark_Mat"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:reflectionroughness_texture = @./assets/vegetation/textures/LondonPlaneBark_Roughness.r.rtex.dds@
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_D241E7D5964D0473" (
+            references = None
+        )
+        {
+        }
+
+        over "mesh_A6DB428528C78670" (
+            references = None
+        )
+        {
+        }
     }
 
     over "Looks"
@@ -1107,5 +1249,11 @@ over "RootNode"
             }
         }
     }
+}
+
+over "OmniverseKit_Persp"
+{
+    float focalLength = 24
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -1137.7365040107406)
 }
 
