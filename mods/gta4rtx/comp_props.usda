@@ -432,6 +432,17 @@ over "RootNode"
                 custom bool inputs:use_legacy_alpha_state = 0
             }
         }
+
+        over "mat_160611AD039F0D3D"
+        {
+            over "Shader"
+            {
+                custom float inputs:alpha_test_reference_value = 1
+                custom int inputs:alpha_test_type = 4
+                custom bool inputs:blend_enabled = 0
+                custom bool inputs:use_legacy_alpha_state = 0
+            }
+        }
     }
 
     over "meshes"
@@ -451,6 +462,14 @@ over "RootNode"
             {
                 custom uniform bool remix_category:decal_Static = 0
                 custom uniform bool remix_category:world_ui = 0
+            }
+        }
+
+        over "mesh_919001AE73286B46"
+        {
+            over "mesh"
+            {
+                custom uniform bool remix_category:alpha_blend_to_cutout = 1
             }
         }
     }
