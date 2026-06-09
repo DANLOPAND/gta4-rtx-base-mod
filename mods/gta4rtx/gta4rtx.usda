@@ -7,8 +7,8 @@
                 double radius = 500
             }
             dictionary Perspective = {
-                double3 position = (1042.6745480230832, -409.4042652269879, 27.01793026207307)
-                double3 target = (26.929434093401703, -384.944470876914, -429.8321355104243)
+                double3 position = (990.6362829396098, -422.17503934676915, 18.505436918895995)
+                double3 target = (2010.4384244019266, -72.94084295625271, -49.96667221026769)
             }
             dictionary Right = {
                 double3 position = (0, -500, 0)
@@ -22,10 +22,10 @@
         }
         string lightspeed_layer_type = "workfile"
         dictionary omni_layer = {
-            string authoring_layer = "./comp_props.usda"
+            string authoring_layer = "./comp_effects.usda"
             dictionary locked = {
                 bool "./deps/captures/0_broker_safehouse_day.usd" = 1
-                bool "./deps/captures/2_broken_fences.usd" = 1
+                bool "./deps/captures/111_second_rain_capture.usd" = 1
                 bool "./deps/captures/__asd_proxy_emnico_cutscene.usd" = 1
                 bool "./deps/captures/asd13.usd" = 1
                 bool "./deps/captures/capture02_small.usd" = 1
@@ -41,7 +41,7 @@
     startTimeCode = 0
     subLayers = [
         @./mod.usda@,
-        @./deps/captures/2_broken_fences.usd@
+        @./deps/captures/111_second_rain_capture.usd@
     ]
     timeCodesPerSecond = 24
     upAxis = "Z"
