@@ -443,6 +443,25 @@ over "RootNode"
                 custom bool inputs:use_legacy_alpha_state = 0
             }
         }
+
+        over "mat_F7D22862D05384CF"
+        {
+            over "Shader"
+            {
+                custom float inputs:metallic_constant = 1
+                custom asset inputs:normalmap_texture = @@
+                custom float inputs:reflection_roughness_constant = 0.48
+            }
+        }
+
+        over "mat_2934A9CC871ED7CD"
+        {
+            over "Shader"
+            {
+                custom float inputs:metallic_constant = 1
+                custom float inputs:reflection_roughness_constant = 0.48999998
+            }
+        }
     }
 
     over "meshes"

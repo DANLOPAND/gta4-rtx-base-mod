@@ -7,8 +7,8 @@
                 double radius = 500
             }
             dictionary Perspective = {
-                double3 position = (990.6362829396098, -422.17503934676915, 18.505436918895995)
-                double3 target = (2010.4384244019266, -72.94084295625271, -49.96667221026769)
+                double3 position = (1036.9137431448412, -423.5106944668986, 19.28549379788322)
+                double3 target = (-1137.7365011711304, 0.000016640453907257324, 0.000045228365053162634)
             }
             dictionary Right = {
                 double3 position = (0, -500, 0)
@@ -18,14 +18,14 @@
                 double3 position = (0, 0, 500)
                 double radius = 500
             }
-            string boundCamera = "/OmniverseKit_Persp"
+            string boundCamera = "/Camera"
         }
         string lightspeed_layer_type = "workfile"
         dictionary omni_layer = {
-            string authoring_layer = "./comp_effects.usda"
+            string authoring_layer = "./hq_props_chainlink.usda"
             dictionary locked = {
+                bool "./deps/captures/000_fence02.usd" = 1
                 bool "./deps/captures/0_broker_safehouse_day.usd" = 1
-                bool "./deps/captures/111_second_rain_capture.usd" = 1
                 bool "./deps/captures/__asd_proxy_emnico_cutscene.usd" = 1
                 bool "./deps/captures/asd13.usd" = 1
                 bool "./deps/captures/capture02_small.usd" = 1
@@ -41,7 +41,7 @@
     startTimeCode = 0
     subLayers = [
         @./mod.usda@,
-        @./deps/captures/111_second_rain_capture.usd@
+        @./deps/captures/000_fence02.usd@
     ]
     timeCodesPerSecond = 24
     upAxis = "Z"
@@ -342,9 +342,38 @@ def "Viewport_Waypoints" (
 }
 
 def Scope "CustomTags" (
-    prepend apiSchemas = ["CollectionAPI:marker", "CollectionAPI:rain_particle_system", "CollectionAPI:temp_hidden"]
+    prepend apiSchemas = ["CollectionAPI:marker", "CollectionAPI:rain_particle_system", "CollectionAPI:temp_hidden", "CollectionAPI:fence"]
 )
 {
+    uniform token collection:fence:expansionRule = "explicitOnly"
+    prepend rel collection:fence:includes = [
+        </RootNode/meshes/mesh_17D1D544B95EDB5C/mesh>,
+        </RootNode/meshes/mesh_17D1D544B95EDB5C/ref_29ce7a9f78ab4ef9807c6dc71ccf06d4/Instancer08/Instancer08_mesh>,
+        </RootNode/meshes/mesh_17D1D544B95EDB5C/ref_29ce7a9f78ab4ef9807c6dc71ccf06d4/Instancer08/_01_base_fence_001_instancer/_01_base_fence_010>,
+        </RootNode/meshes/mesh_EAF475BCF6BB276C/ref_2c211d48d44e4a3fabe8894758eede41/Instancer08_Razor/Instancer08_Razor_mesh>,
+        </RootNode/meshes/mesh_EAF475BCF6BB276C/ref_2c211d48d44e4a3fabe8894758eede41/Instancer08_Razor/razer_outer_back_instancer/razer_outer_back_001>,
+        </RootNode/instances/inst_EAF475BCF6BB276C_0/ref_2c211d48d44e4a3fabe8894758eede41/Instancer08_Razor/Instancer08_Razor_mesh>,
+        </RootNode/instances/inst_EAF475BCF6BB276C_0/ref_2c211d48d44e4a3fabe8894758eede41/Instancer08_Razor/razer_outer_back_instancer/razer_outer_back_001>,
+        </RootNode/meshes/mesh_3A7B1E5718442E1D/ref_d55d5ab689474d9dbf41269a77a73b14/Instancer10/Instancer10_mesh>,
+        </RootNode/meshes/mesh_3A7B1E5718442E1D/ref_d55d5ab689474d9dbf41269a77a73b14/Instancer10/_01_base_fence_002_instancer/_01_base_fence_002>,
+        </RootNode/instances/inst_3A7B1E5718442E1D_3/ref_d55d5ab689474d9dbf41269a77a73b14/Instancer10/Instancer10_mesh>,
+        </RootNode/instances/inst_3A7B1E5718442E1D_3/ref_d55d5ab689474d9dbf41269a77a73b14/Instancer10/_01_base_fence_002_instancer/_01_base_fence_002>,
+        </RootNode/meshes/mesh_3188D6EE992AA41B/ref_fc2a20257e5e46e3af1fd77b60a0ba1c/Instancer10_Fence/Instancer10_Fence_mesh>,
+        </RootNode/meshes/mesh_3188D6EE992AA41B/ref_fc2a20257e5e46e3af1fd77b60a0ba1c/Instancer10_Fence/_01_base_fence_instancer/_01_base_fence>,
+        </RootNode/instances/inst_3188D6EE992AA41B_4/ref_fc2a20257e5e46e3af1fd77b60a0ba1c/Instancer10_Fence/Instancer10_Fence_mesh>,
+        </RootNode/instances/inst_3188D6EE992AA41B_4/ref_fc2a20257e5e46e3af1fd77b60a0ba1c/Instancer10_Fence/_01_base_fence_instancer/_01_base_fence>,
+        </RootNode/meshes/mesh_15E22312C05FB4D4/ref_2a766cad2f66445a98615743055cc1ba/XForms/World/razer_outer_back/razer_outer_back_003>,
+        </RootNode/instances/inst_15E22312C05FB4D4_1/ref_2a766cad2f66445a98615743055cc1ba/XForms/World/razer_outer_back/razer_outer_back_003>,
+        </RootNode/meshes/mesh_15E22312C05FB4D4/ref_9a745f55563f4111a9f7330aa0f3f7bb/XForms/World/razer_inner01/razer_inner01_003>,
+        </RootNode/meshes/mesh_15E22312C05FB4D4/ref_9a745f55563f4111a9f7330aa0f3f7bb/XForms/World/razer_inner02/razer_inner02_002>,
+        </RootNode/meshes/mesh_15E22312C05FB4D4/ref_9a745f55563f4111a9f7330aa0f3f7bb/XForms/World/razer_inner03/razer_inner03_002>,
+        </RootNode/meshes/mesh_25298D3ED2E781D4/ref_4687b39368b74f6c96fd48d1cc8edb3e/XForms/World/razer_outer_back/razer_outer_back_003>,
+        </RootNode/meshes/mesh_6C95D5C0F921800F/ref_81475f1ad1204d41809657c750524da5/Instancer11_Fence/Instancer11_Fence_mesh>,
+        </RootNode/meshes/mesh_6C95D5C0F921800F/ref_81475f1ad1204d41809657c750524da5/Instancer11_Fence/_01_base_fence_instancer/_01_base_fence>,
+        </RootNode/meshes/mesh_99069D24EFF4BD77/ref_dbe871fcd8b94bd08bf04b920d471546/Instancer11_Fence/Instancer11_Fence_mesh>,
+        </RootNode/meshes/mesh_99069D24EFF4BD77/ref_dbe871fcd8b94bd08bf04b920d471546/Instancer11_Fence/_01_base_fence_instancer/_01_base_fence>,
+        </RootNode/meshes/mesh_5DFD258EF7E0B2AE/ref_2d52d851ca1a4b21964385d2fca43ea6>,
+    ]
     uniform token collection:marker:expansionRule = "explicitOnly"
     prepend rel collection:marker:includes = [
         </RootNode/instances/inst_215CD62CAB0D7A28_0/mesh>,
