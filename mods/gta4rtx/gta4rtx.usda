@@ -7,8 +7,8 @@
                 double radius = 500
             }
             dictionary Perspective = {
-                double3 position = (1183.1564627270284, -579.2925345553301, 15.807072786089726)
-                double3 target = (266.72612063390994, -1562.695092493202, 37.22706676670812)
+                double3 position = (-242.43779087176395, 665.3447511758474, 12.094291116175642)
+                double3 target = (-279.29246649873437, 238.82489073972118, 576.8651861966383)
             }
             dictionary Right = {
                 double3 position = (0, -500, 0)
@@ -22,15 +22,15 @@
         }
         string lightspeed_layer_type = "workfile"
         dictionary omni_layer = {
-            string authoring_layer = "./comp_props.usda"
+            string authoring_layer = "./vegetation.usda"
             dictionary locked = {
-                bool "./deps/captures/000_fence16_rollercoaster.usd" = 1
                 bool "./deps/captures/0_broker_safehouse_day.usd" = 1
                 bool "./deps/captures/__asd_proxy_emnico_cutscene.usd" = 1
                 bool "./deps/captures/asd13.usd" = 1
                 bool "./deps/captures/capture02_small.usd" = 1
                 bool "./deps/captures/chrome02.usd" = 1
                 bool "./deps/captures/nico_safehouse.usd" = 1
+                bool "./deps/captures/zz_veg_bush.usd" = 1
             }
         }
         dictionary renderSettings = {
@@ -41,7 +41,7 @@
     startTimeCode = 0
     subLayers = [
         @./mod.usda@,
-        @./deps/captures/000_fence16_rollercoaster.usd@
+        @./deps/captures/zz_veg_bush.usd@
     ]
     timeCodesPerSecond = 24
     upAxis = "Z"

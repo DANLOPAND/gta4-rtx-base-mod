@@ -908,6 +908,7 @@ over "RootNode"
                             custom asset inputs:metallic_texture = @./assets/props/chainlink/01/tex/razerwire_razerwire_metalness.m.rtex.dds@
                             custom asset inputs:normalmap_texture = @./assets/props/chainlink/01/tex/razerwire_razerwire_normal_dx_OTH_Normal.n.rtex.dds@
                             custom asset inputs:reflectionroughness_texture = @./assets/props/chainlink/01/tex/razerwire_razerwire_roughness.r.rtex.dds@
+                            custom bool inputs:use_legacy_alpha_state = 0
                         }
                     }
                 }
@@ -939,6 +940,7 @@ over "RootNode"
                             custom asset inputs:normalmap_texture = @./assets/props/chainlink/01/tex/chainlink01_chainlink_normal_dx_OTH_Normal.n.rtex.dds@
                             custom float inputs:reflection_roughness_constant = 0.4
                             custom asset inputs:reflectionroughness_texture = @@
+                            custom bool inputs:use_legacy_alpha_state = 0
                         }
                     }
                 }
@@ -965,10 +967,12 @@ over "RootNode"
                     {
                         over "Shader"
                         {
+                            color3f inputs:diffuse_color_constant = (1, 0.41312742, 0.41312742)
                             custom asset inputs:diffuse_texture = @./assets/props/chainlink/01/tex/chainlink01_chainlink_albedo.a.rtex.dds@
                             custom asset inputs:metallic_texture = @./assets/props/chainlink/01/tex/chainlink01_chainlink_metalness.m.rtex.dds@
                             custom asset inputs:normalmap_texture = @./assets/props/chainlink/01/tex/chainlink01_chainlink_normal_dx_OTH_Normal.n.rtex.dds@
                             custom float inputs:reflection_roughness_constant = 0.4
+                            custom bool inputs:use_legacy_alpha_state = 0
                         }
                     }
                 }

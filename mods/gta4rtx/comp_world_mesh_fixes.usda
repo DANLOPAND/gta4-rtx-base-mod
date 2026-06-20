@@ -692,6 +692,7 @@ over "RootNode"
                                 over "Shader"
                                 {
                                     custom asset inputs:diffuse_texture = @./assets/wmeshfix/broker/fence_289055/tex/F42CF6B051FEB51A_albedo.a.rtex.dds@
+                                    custom bool inputs:use_legacy_alpha_state = 0
                                 }
                             }
                         }
