@@ -482,10 +482,13 @@ over "RootNode"
                                     asset inputs:diffuse_texture = @./assets/vegetation/textures/Bush_Leaf_Color.a.rtex.dds@
                                     asset inputs:normalmap_texture = @./assets/vegetation/textures/Bush_Leaf_OTH_Normal.n.rtex.dds@
                                     custom asset inputs:reflectionroughness_texture = @./assets/vegetation/textures/Bush_Leaf_Roughness.r.rtex.dds@
-                                    custom float inputs:subsurface_measurement_distance = 3
+                                    custom bool inputs:subsurface_diffusion_profile = 0
+                                    custom float inputs:subsurface_measurement_distance = 0.88
                                     custom asset inputs:subsurface_single_scattering_texture = @./assets/vegetation/textures/Bush_Leaf_Subsurface.a.rtex.dds@
                                     custom color3f inputs:subsurface_transmittance_color = (0.12, 0.1, 0.95)
+                                    custom asset inputs:subsurface_transmittance_texture = @@
                                     custom float inputs:subsurface_volumetric_anisotropy = -0.1
+                                    custom bool inputs:use_legacy_alpha_state = 0
                                 }
                             }
                         }
@@ -1597,6 +1600,9 @@ over "RootNode"
                                     asset inputs:diffuse_texture = @./assets/vegetation/textures/Azalea_Color.a.rtex.dds@
                                     asset inputs:normalmap_texture = @./assets/vegetation/textures/Azalea_OTH_Normal.n.rtex.dds@
                                     custom asset inputs:reflectionroughness_texture = @./assets/vegetation/textures/Azalea_Roughness.r.rtex.dds@
+                                    custom float inputs:subsurface_measurement_distance = 1.36
+                                    custom color3f inputs:subsurface_transmittance_color = (0.20333625, 0.3739723, 0.95752895)
+                                    custom asset inputs:subsurface_transmittance_texture = @./assets/vegetation/textures/Azalea_Color.a.rtex.dds@
                                 }
                             }
 
