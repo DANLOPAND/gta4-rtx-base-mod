@@ -27,14 +27,6 @@ over "RootNode"
             }
         }
 
-        over "mat_733EBD28536F7FB6"
-        {
-            over "Shader"
-            {
-                custom bool inputs:use_legacy_alpha_state = 0
-            }
-        }
-
         over "mat_000000002FC941C2"
         {
             over "Shader"

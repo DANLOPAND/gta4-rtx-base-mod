@@ -883,6 +883,97 @@ over "RootNode"
                 }
             }
         }
+
+        over "mesh_D36DB89D0F29D1A4" (
+            references = None
+        )
+        {
+            def Xform "ref_d02522af50f8471296788005e4dbef56" (
+                prepend references = @./assets/props/chainlink/01/fence_13_rollercoaster_razor_converted.usda@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "razerwire_001"
+                    {
+                        over "Shader"
+                        {
+                            custom asset inputs:diffuse_texture = @./assets/props/chainlink/01/tex/razerwire_razerwire_albedo.a.rtex.dds@
+                            custom asset inputs:metallic_texture = @./assets/props/chainlink/01/tex/razerwire_razerwire_metalness.m.rtex.dds@
+                            custom asset inputs:normalmap_texture = @./assets/props/chainlink/01/tex/razerwire_razerwire_normal_dx_OTH_Normal.n.rtex.dds@
+                            custom asset inputs:reflectionroughness_texture = @./assets/props/chainlink/01/tex/razerwire_razerwire_roughness.r.rtex.dds@
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_C46EF3BF5B8DB719" (
+            references = None
+        )
+        {
+            def Xform "ref_b554bd5758ee485194af5d749cdee129" (
+                prepend references = @./assets/props/chainlink/01/fence_13_rollercoaster_converted.usda@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "chainlink_light"
+                    {
+                        over "Shader"
+                        {
+                            custom asset inputs:diffuse_texture = @./assets/props/chainlink/01/tex/chainlink01_chainlink_albedo.a.rtex.dds@
+                            custom asset inputs:metallic_texture = @./assets/props/chainlink/01/tex/chainlink01_chainlink_metalness.m.rtex.dds@
+                            custom asset inputs:normalmap_texture = @./assets/props/chainlink/01/tex/chainlink01_chainlink_normal_dx_OTH_Normal.n.rtex.dds@
+                            custom float inputs:reflection_roughness_constant = 0.4
+                            custom asset inputs:reflectionroughness_texture = @@
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_AAB1E312E9FD1D1C" (
+            references = None
+        )
+        {
+            def Xform "ref_c91b9dc4cad64615a988c6dce7462af7" (
+                prepend references = @./assets/props/chainlink/01/fence_14_inst_converted.usda@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "chainlink_light_001"
+                    {
+                        over "Shader"
+                        {
+                            custom asset inputs:diffuse_texture = @./assets/props/chainlink/01/tex/chainlink01_chainlink_albedo.a.rtex.dds@
+                            custom asset inputs:metallic_texture = @./assets/props/chainlink/01/tex/chainlink01_chainlink_metalness.m.rtex.dds@
+                            custom asset inputs:normalmap_texture = @./assets/props/chainlink/01/tex/chainlink01_chainlink_normal_dx_OTH_Normal.n.rtex.dds@
+                            custom float inputs:reflection_roughness_constant = 0.4
+                        }
+                    }
+                }
+            }
+        }
     }
 
     over "cameras"
@@ -921,7 +1012,7 @@ def Camera "Camera" (
     float verticalAperture = 15.2908
     float verticalApertureOffset = 0
     token visibility = "inherited"
-    float3 xformOp:rotateYXZ = (88.2941, -1.0684064e-13, 49.495014)
+    float3 xformOp:rotateYXZ = (88.495575, -180, -95.53962)
     float3 xformOp:scale = (1, 1, 1)
     double3 xformOp:translate = (1043.2336786043152, -422.94907278899126, 19.53784685346148)
     uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYXZ", "xformOp:scale"]

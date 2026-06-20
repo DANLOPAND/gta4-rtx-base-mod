@@ -40,6 +40,99 @@ over "RootNode"
             {
             }
         }
+
+        over "mesh_FEA9C58130287C46" (
+            references = None
+        )
+        {
+            def Xform "ref_96c31b1a7b1d4276844938a5d726055d" (
+                prepend references = @./assets/props/building_alpha_fixes/m_FEA9C58130287C46_converted.usdc@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "chainlink_light"
+                    {
+                        over "Shader"
+                        {
+                            custom asset inputs:diffuse_texture = @./assets/props/building_alpha_fixes/tex/chainlink03_chainlink_rusty_albedo.a.rtex.dds@
+                            custom asset inputs:metallic_texture = @./assets/props/building_alpha_fixes/tex/chainlink03_chainlink_rusty_metalness.m.rtex.dds@
+                            custom asset inputs:normalmap_texture = @./assets/props/building_alpha_fixes/tex/chainlink03_chainlink_rusty_normal_dx_OTH_Normal.n.rtex.dds@
+                            custom asset inputs:reflectionroughness_texture = @./assets/props/building_alpha_fixes/tex/chainlink03_chainlink_rusty_roughness.r.rtex.dds@
+                            custom bool inputs:use_legacy_alpha_state = 0
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_8198A1DEE67BE1A9" (
+            references = None
+        )
+        {
+            def Xform "ref_023f3053d6424f0c818ea861ec49695b" (
+                prepend references = @./assets/props/building_alpha_fixes/m_8198A1DEE67BE1A9/railing_inst_converted.usda@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "BcRailCombined"
+                    {
+                        over "Shader"
+                        {
+                            asset inputs:diffuse_texture = @./assets/props/building_alpha_fixes/m_8198A1DEE67BE1A9/tex/ny_railing_build_BcRailCombined_albedo.a.rtex.dds@
+                            custom asset inputs:metallic_texture = @./assets/props/building_alpha_fixes/m_8198A1DEE67BE1A9/tex/ny_railing_build_BcRailCombined_metalness.m.rtex.dds@
+                            custom asset inputs:normalmap_texture = @./assets/props/building_alpha_fixes/m_8198A1DEE67BE1A9/tex/ny_railing_build_BcRailCombined_normal_dx_OTH_Normal.n.rtex.dds@
+                            custom asset inputs:reflectionroughness_texture = @./assets/props/building_alpha_fixes/m_8198A1DEE67BE1A9/tex/ny_railing_build_BcRailCombined_roughness.r.rtex.dds@
+                            custom bool inputs:use_legacy_alpha_state = 0
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_11B62C1A9C3888FD" (
+            references = None
+        )
+        {
+            def Xform "ref_e1f5c46882084321b752e8be4be40550" (
+                prepend references = @./assets/props/building_alpha_fixes/m_8198A1DEE67BE1A9/railing_02_inst_converted.usda@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "BcRailCombined"
+                    {
+                        over "Shader"
+                        {
+                            asset inputs:diffuse_texture = @./assets/props/building_alpha_fixes/m_8198A1DEE67BE1A9/tex/ny_railing_build_BcRailCombined_albedo.a.rtex.dds@
+                            custom asset inputs:metallic_texture = @./assets/props/building_alpha_fixes/m_8198A1DEE67BE1A9/tex/ny_railing_build_BcRailCombined_metalness.m.rtex.dds@
+                            custom asset inputs:normalmap_texture = @./assets/props/building_alpha_fixes/m_8198A1DEE67BE1A9/tex/ny_railing_build_BcRailCombined_normal_dx_OTH_Normal.n.rtex.dds@
+                            custom asset inputs:reflectionroughness_texture = @./assets/props/building_alpha_fixes/m_8198A1DEE67BE1A9/tex/ny_railing_build_BcRailCombined_roughness.r.rtex.dds@
+                            custom bool inputs:use_legacy_alpha_state = 0
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

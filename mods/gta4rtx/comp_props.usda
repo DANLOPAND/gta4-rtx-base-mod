@@ -462,6 +462,14 @@ over "RootNode"
                 custom float inputs:reflection_roughness_constant = 0.48999998
             }
         }
+
+        over "mat_A9ED6D954F587C4F"
+        {
+            over "Shader"
+            {
+                custom float inputs:metallic_constant = 0.72499996
+            }
+        }
     }
 
     over "meshes"

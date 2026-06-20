@@ -7,8 +7,8 @@
                 double radius = 500
             }
             dictionary Perspective = {
-                double3 position = (1036.9137431448412, -423.5106944668986, 19.28549379788322)
-                double3 target = (-1137.7365011711304, 0.000016640453907257324, 0.000045228365053162634)
+                double3 position = (1183.1564627270284, -579.2925345553301, 15.807072786089726)
+                double3 target = (266.72612063390994, -1562.695092493202, 37.22706676670812)
             }
             dictionary Right = {
                 double3 position = (0, -500, 0)
@@ -18,13 +18,13 @@
                 double3 position = (0, 0, 500)
                 double radius = 500
             }
-            string boundCamera = "/Camera"
+            string boundCamera = "/OmniverseKit_Persp"
         }
         string lightspeed_layer_type = "workfile"
         dictionary omni_layer = {
-            string authoring_layer = "./hq_props_chainlink.usda"
+            string authoring_layer = "./comp_props.usda"
             dictionary locked = {
-                bool "./deps/captures/000_fence02.usd" = 1
+                bool "./deps/captures/000_fence16_rollercoaster.usd" = 1
                 bool "./deps/captures/0_broker_safehouse_day.usd" = 1
                 bool "./deps/captures/__asd_proxy_emnico_cutscene.usd" = 1
                 bool "./deps/captures/asd13.usd" = 1
@@ -41,7 +41,7 @@
     startTimeCode = 0
     subLayers = [
         @./mod.usda@,
-        @./deps/captures/000_fence02.usd@
+        @./deps/captures/000_fence16_rollercoaster.usd@
     ]
     timeCodesPerSecond = 24
     upAxis = "Z"
@@ -342,10 +342,33 @@ def "Viewport_Waypoints" (
 }
 
 def Scope "CustomTags" (
-    prepend apiSchemas = ["CollectionAPI:marker", "CollectionAPI:rain_particle_system", "CollectionAPI:temp_hidden", "CollectionAPI:fence"]
+    prepend apiSchemas = ["CollectionAPI:marker", "CollectionAPI:rain_particle_system", "CollectionAPI:temp_hidden", "CollectionAPI:fence", "CollectionAPI:building_alpha", "CollectionAPI:vegetation"]
 )
 {
+    uniform token collection:building_alpha:expansionRule = "explicitOnly"
+    delete rel collection:building_alpha:includes = [
+        </RootNode/meshes/mesh_FEA9C58130287C46/ref_7b423694097a4d098ac1c0a0587f33c0/InstancesLarge/InstancesLarge_mesh>,
+        </RootNode/meshes/mesh_FEA9C58130287C46/ref_7b423694097a4d098ac1c0a0587f33c0/InstancesLarge/window_cover_instancer/window_cover>,
+        </RootNode/instances/inst_FEA9C58130287C46_0/ref_7b423694097a4d098ac1c0a0587f33c0/InstancesLarge/InstancesLarge_mesh>,
+        </RootNode/instances/inst_FEA9C58130287C46_0/ref_7b423694097a4d098ac1c0a0587f33c0/InstancesLarge/window_cover_instancer/window_cover>,
+    ]
+    prepend rel collection:building_alpha:includes = [
+        </RootNode/meshes/mesh_FEA9C58130287C46/ref_d72ecfaf87b54b4da3fb3f289c38715c/InstancesSmall/InstancesSmall_mesh>,
+        </RootNode/meshes/mesh_FEA9C58130287C46/ref_d72ecfaf87b54b4da3fb3f289c38715c/InstancesSmall/window_cover_small_instancer/window_cover_001>,
+        </RootNode/instances/inst_FEA9C58130287C46_0/ref_d72ecfaf87b54b4da3fb3f289c38715c/InstancesSmall/InstancesSmall_mesh>,
+        </RootNode/instances/inst_FEA9C58130287C46_0/ref_d72ecfaf87b54b4da3fb3f289c38715c/InstancesSmall/window_cover_small_instancer/window_cover_001>,
+        </RootNode/meshes/mesh_FEA9C58130287C46>,
+        </RootNode/meshes/mesh_8198A1DEE67BE1A9>,
+        </RootNode/meshes/mesh_11B62C1A9C3888FD>,
+    ]
     uniform token collection:fence:expansionRule = "explicitOnly"
+    delete rel collection:fence:includes = [
+        </RootNode/meshes/mesh_FEA9C58130287C46/ref_d72ecfaf87b54b4da3fb3f289c38715c/InstancesSmall/InstancesSmall_mesh>,
+        </RootNode/meshes/mesh_FEA9C58130287C46/ref_d72ecfaf87b54b4da3fb3f289c38715c/InstancesSmall/window_cover_small_instancer/window_cover_001>,
+        </RootNode/instances/inst_FEA9C58130287C46_0/ref_d72ecfaf87b54b4da3fb3f289c38715c/InstancesSmall/InstancesSmall_mesh>,
+        </RootNode/instances/inst_FEA9C58130287C46_0/ref_d72ecfaf87b54b4da3fb3f289c38715c/InstancesSmall/window_cover_small_instancer/window_cover_001>,
+        </RootNode/meshes/mesh_2566D53AD6F7B0A0>,
+    ]
     prepend rel collection:fence:includes = [
         </RootNode/meshes/mesh_17D1D544B95EDB5C/mesh>,
         </RootNode/meshes/mesh_17D1D544B95EDB5C/ref_29ce7a9f78ab4ef9807c6dc71ccf06d4/Instancer08/Instancer08_mesh>,
@@ -373,6 +396,9 @@ def Scope "CustomTags" (
         </RootNode/meshes/mesh_99069D24EFF4BD77/ref_dbe871fcd8b94bd08bf04b920d471546/Instancer11_Fence/Instancer11_Fence_mesh>,
         </RootNode/meshes/mesh_99069D24EFF4BD77/ref_dbe871fcd8b94bd08bf04b920d471546/Instancer11_Fence/_01_base_fence_instancer/_01_base_fence>,
         </RootNode/meshes/mesh_5DFD258EF7E0B2AE/ref_2d52d851ca1a4b21964385d2fca43ea6>,
+        </RootNode/meshes/mesh_D36DB89D0F29D1A4>,
+        </RootNode/meshes/mesh_C46EF3BF5B8DB719>,
+        </RootNode/meshes/mesh_AAB1E312E9FD1D1C>,
     ]
     uniform token collection:marker:expansionRule = "explicitOnly"
     prepend rel collection:marker:includes = [
@@ -388,5 +414,7 @@ def Scope "CustomTags" (
     ]
     uniform token collection:temp_hidden:expansionRule = "explicitOnly"
     prepend rel collection:temp_hidden:includes = </RootNode/instances/inst_88B1E8E43171E4F1_0/mesh>
+    uniform token collection:vegetation:expansionRule = "explicitOnly"
+    prepend rel collection:vegetation:includes = </RootNode/meshes/mesh_3292487B530F0C93>
 }
 
