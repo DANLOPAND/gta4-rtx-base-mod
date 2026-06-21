@@ -279,6 +279,46 @@ over "RootNode"
                 custom asset inputs:reflectionroughness_texture = @./assets/npc/nico/nico_hands_Roughness.r.rtex.dds@
             }
         }
+
+        over "mat_8080C559A38CDCCC"
+        {
+            over "Shader"
+            {
+                custom float inputs:reflection_roughness_constant = 1
+            }
+        }
+
+        over "mat_E26650C382EADF59"
+        {
+            over "Shader"
+            {
+                custom float inputs:reflection_roughness_constant = 0.91499996
+            }
+        }
+
+        over "mat_825E844A7F9B8083"
+        {
+            over "Shader"
+            {
+                custom float inputs:reflection_roughness_constant = 0.78999996
+            }
+        }
+
+        over "mat_C6F2CF437A8AE792"
+        {
+            over "Shader"
+            {
+                custom float inputs:reflection_roughness_constant = 0.84499997
+            }
+        }
+
+        over "mat_DE444219EE8A730D"
+        {
+            over "Shader"
+            {
+                custom float inputs:reflection_roughness_constant = 0.955
+            }
+        }
     }
 
     over "meshes"
@@ -305,6 +345,26 @@ over "RootNode"
             over "mesh"
             {
                 custom uniform bool remix_category:alpha_blend_to_cutout = 1
+            }
+        }
+
+        over "mesh_3A7B1E5718442E1D"
+        {
+            over "ref_d55d5ab689474d9dbf41269a77a73b14"
+            {
+                over "Instancer10"
+                {
+                    over "_01_base_fence_002_instancer"
+                    {
+                        over "_01_base_fence_002"
+                        {
+                            float3 xformOp:rotateXYZ = (0, 0, 0)
+                            float3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                        }
+                    }
+                }
             }
         }
     }

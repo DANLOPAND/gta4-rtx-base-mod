@@ -7,8 +7,8 @@
                 double radius = 500
             }
             dictionary Perspective = {
-                double3 position = (1185.4319914311573, -146.11765022237023, 44.07472965304445)
-                double3 target = (152.41028565009356, 376.6522350375866, -24.637625521214623)
+                double3 position = (1433.2681786873534, 221.8516879092145, 26.398683838395783)
+                double3 target = (2304.8523309322836, -923.3246260730864, -103.60208214883326)
             }
             dictionary Right = {
                 double3 position = (0, -500, 0)
@@ -22,9 +22,9 @@
         }
         string lightspeed_layer_type = "workfile"
         dictionary omni_layer = {
-            string authoring_layer = "./hq_props_building_alpha_fixes.usda"
+            string authoring_layer = "./hq_props_chainlink.usda"
             dictionary locked = {
-                bool "./deps/captures/000_fence22_balcony.usd" = 1
+                bool "./deps/captures/000_fence26_small.usd" = 1
                 bool "./deps/captures/0_broker_safehouse_day.usd" = 1
                 bool "./deps/captures/__asd_proxy_emnico_cutscene.usd" = 1
                 bool "./deps/captures/asd13.usd" = 1
@@ -41,7 +41,7 @@
     startTimeCode = 0
     subLayers = [
         @./mod.usda@,
-        @./deps/captures/000_fence22_balcony.usd@
+        @./deps/captures/000_fence26_small.usd@
     ]
     timeCodesPerSecond = 24
     upAxis = "Z"
@@ -404,6 +404,9 @@ def Scope "CustomTags" (
         </RootNode/meshes/mesh_C46EF3BF5B8DB719>,
         </RootNode/meshes/mesh_AAB1E312E9FD1D1C>,
         </RootNode/meshes/mesh_7E3EED91DA92429A>,
+        </RootNode/meshes/mesh_749E02FC38A456A5>,
+        </RootNode/meshes/mesh_2E6938F5C4C3D563>,
+        </RootNode/meshes/mesh_E045207CD6012F68>,
     ]
     uniform token collection:marker:expansionRule = "explicitOnly"
     prepend rel collection:marker:includes = [
