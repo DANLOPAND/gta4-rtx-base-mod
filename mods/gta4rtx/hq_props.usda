@@ -6,7 +6,7 @@
         @./hq_props_tbogt_club.usda@,
         @./hq_props_chainlink.usda@,
         @./hq_props_building_alpha_fixes.usda@,
-        @./hq_world_vegetation.usda@
+        @./hq_props_vegetation.usda@
     ]
     upAxis = "Z"
 )
