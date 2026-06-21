@@ -7,8 +7,8 @@
                 double radius = 500
             }
             dictionary Perspective = {
-                double3 position = (1437.5514119307438, -434.0553847940943, 14.424847679740752)
-                double3 target = (721.7458982194624, -1742.8180136899152, 68.64466499852517)
+                double3 position = (1435.242676489712, -423.53802201211624, 18.120453348207135)
+                double3 target = (-925.5065371438116, -1311.189129937773, 106.0278516497049)
             }
             dictionary Right = {
                 double3 position = (0, -500, 0)
@@ -22,9 +22,9 @@
         }
         string lightspeed_layer_type = "workfile"
         dictionary omni_layer = {
-            string authoring_layer = "./vegetation.usda"
+            string authoring_layer = "./comp_world_broken_decals.usda"
             dictionary locked = {
-                bool "./deps/captures/000_fence18_concreateblock.usd" = 1
+                bool "./deps/captures/000_fence19_hw_ramp.usd" = 1
                 bool "./deps/captures/0_broker_safehouse_day.usd" = 1
                 bool "./deps/captures/__asd_proxy_emnico_cutscene.usd" = 1
                 bool "./deps/captures/asd13.usd" = 1
@@ -41,7 +41,7 @@
     startTimeCode = 0
     subLayers = [
         @./mod.usda@,
-        @./deps/captures/000_fence18_concreateblock.usd@
+        @./deps/captures/000_fence19_hw_ramp.usd@
     ]
     timeCodesPerSecond = 24
     upAxis = "Z"
@@ -360,6 +360,8 @@ def Scope "CustomTags" (
         </RootNode/meshes/mesh_FEA9C58130287C46>,
         </RootNode/meshes/mesh_8198A1DEE67BE1A9>,
         </RootNode/meshes/mesh_11B62C1A9C3888FD>,
+        </RootNode/meshes/mesh_1563A83FB7428908>,
+        </RootNode/meshes/mesh_E2B818F4094ABC86>,
     ]
     uniform token collection:fence:expansionRule = "explicitOnly"
     delete rel collection:fence:includes = [

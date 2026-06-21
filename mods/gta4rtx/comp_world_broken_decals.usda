@@ -211,6 +211,16 @@ over "RootNode"
                 custom bool inputs:use_legacy_alpha_state = 1
             }
         }
+
+        over "mat_3B4F2EA66C1243F2"
+        {
+            over "Shader"
+            {
+                custom bool inputs:blend_enabled = 1
+                custom int inputs:blend_type = 0
+                custom bool inputs:use_legacy_alpha_state = 0
+            }
+        }
     }
 }
 

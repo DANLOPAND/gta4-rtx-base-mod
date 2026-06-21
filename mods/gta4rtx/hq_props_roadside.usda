@@ -1,0 +1,61 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_A90D73CE943CE88C" (
+            references = None
+        )
+        {
+            def Xform "ref_87f7c02bd3d44efcb851e3b32e504171" (
+                prepend references = @./assets/props/roadside/conc_barrier/net.usd@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "World"
+                    {
+                        over "Looks"
+                        {
+                            over "net_mat"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./assets/props/roadside/conc_barrier/tex/concbarnet_net_mat_albedo.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./assets/props/roadside/conc_barrier/tex/concbarnet_net_mat_normal_dx_OTH_Normal.n.rtex.dds@
+                                    custom asset inputs:reflectionroughness_texture = @./assets/props/roadside/conc_barrier/tex/concbarnet_net_mat_roughness.r.rtex.dds@
+                                    custom bool inputs:subsurface_diffusion_profile = 0
+                                    custom float inputs:subsurface_measurement_distance = 0
+                                    custom color3f inputs:subsurface_radius = (0.9227799, 0.9227754, 0.9227707)
+                                    custom float inputs:subsurface_radius_scale = 5
+                                    custom color3f inputs:subsurface_single_scattering_albedo = (0.8286513, 0.9227799, 0.54867995)
+                                    custom asset inputs:subsurface_single_scattering_texture = @@
+                                    custom color3f inputs:subsurface_transmittance_color = (0.98841697, 0.9884071, 0.9884071)
+                                    custom asset inputs:subsurface_transmittance_texture = @@
+                                    custom float inputs:subsurface_volumetric_anisotropy = -0.2277
+                                    custom bool inputs:use_legacy_alpha_state = 0
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

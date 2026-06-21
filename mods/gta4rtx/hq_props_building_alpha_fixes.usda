@@ -133,6 +133,68 @@ over "RootNode"
                 }
             }
         }
+
+        over "mesh_1563A83FB7428908" (
+            references = None
+        )
+        {
+            def Xform "ref_e3a136438ac843f389ce4a8f0b71c3d6" (
+                prepend references = @./assets/props/building_alpha_fixes/mesh_1563A83FB7428908_v2_converted.usdc@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "chainlink_light"
+                    {
+                        over "Shader"
+                        {
+                            custom asset inputs:diffuse_texture = @./assets/props/building_alpha_fixes/tex/chainlink03_chainlink_rusty_albedo.a.rtex.dds@
+                            custom asset inputs:metallic_texture = @./assets/props/building_alpha_fixes/tex/chainlink03_chainlink_rusty_metalness.m.rtex.dds@
+                            custom asset inputs:normalmap_texture = @./assets/props/building_alpha_fixes/tex/chainlink03_chainlink_rusty_normal_dx_OTH_Normal.n.rtex.dds@
+                            custom float inputs:reflection_roughness_constant = 0.4
+                            custom bool inputs:use_legacy_alpha_state = 0
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_E2B818F4094ABC86" (
+            references = None
+        )
+        {
+            def Xform "ref_effa48efcc634cf38c1f3c97d7eaa9c4" (
+                prepend references = @./assets/props/building_alpha_fixes/m_8198A1DEE67BE1A9/railing_inst_v2_converted.usda@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "BcRailCombined"
+                    {
+                        over "Shader"
+                        {
+                            bool inputs:blend_enabled = 0
+                            asset inputs:diffuse_texture = @./assets/props/building_alpha_fixes/m_8198A1DEE67BE1A9/tex/ny_railing_build_BcRailCombined_albedo.a.rtex.dds@
+                            custom asset inputs:metallic_texture = @./assets/props/building_alpha_fixes/m_8198A1DEE67BE1A9/tex/ny_railing_build_BcRailCombined_metalness.m.rtex.dds@
+                            custom asset inputs:normalmap_texture = @./assets/props/building_alpha_fixes/m_8198A1DEE67BE1A9/tex/ny_railing_build_BcRailCombined_normal_dx_OTH_Normal.n.rtex.dds@
+                            custom asset inputs:reflectionroughness_texture = @./assets/props/building_alpha_fixes/m_8198A1DEE67BE1A9/tex/ny_railing_build_BcRailCombined_roughness.r.rtex.dds@
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
