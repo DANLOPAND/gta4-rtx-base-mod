@@ -7,8 +7,8 @@
                 double radius = 500
             }
             dictionary Perspective = {
-                double3 position = (1435.242676489712, -423.53802201211624, 18.120453348207135)
-                double3 target = (-925.5065371438116, -1311.189129937773, 106.0278516497049)
+                double3 position = (1185.4319914311573, -146.11765022237023, 44.07472965304445)
+                double3 target = (152.41028565009356, 376.6522350375866, -24.637625521214623)
             }
             dictionary Right = {
                 double3 position = (0, -500, 0)
@@ -22,9 +22,9 @@
         }
         string lightspeed_layer_type = "workfile"
         dictionary omni_layer = {
-            string authoring_layer = "./comp_world_broken_decals.usda"
+            string authoring_layer = "./hq_props_building_alpha_fixes.usda"
             dictionary locked = {
-                bool "./deps/captures/000_fence19_hw_ramp.usd" = 1
+                bool "./deps/captures/000_fence22_balcony.usd" = 1
                 bool "./deps/captures/0_broker_safehouse_day.usd" = 1
                 bool "./deps/captures/__asd_proxy_emnico_cutscene.usd" = 1
                 bool "./deps/captures/asd13.usd" = 1
@@ -41,7 +41,7 @@
     startTimeCode = 0
     subLayers = [
         @./mod.usda@,
-        @./deps/captures/000_fence19_hw_ramp.usd@
+        @./deps/captures/000_fence22_balcony.usd@
     ]
     timeCodesPerSecond = 24
     upAxis = "Z"
@@ -362,6 +362,8 @@ def Scope "CustomTags" (
         </RootNode/meshes/mesh_11B62C1A9C3888FD>,
         </RootNode/meshes/mesh_1563A83FB7428908>,
         </RootNode/meshes/mesh_E2B818F4094ABC86>,
+        </RootNode/meshes/mesh_CF21258CC120FA80>,
+        </RootNode/meshes/mesh_E7C138798D1CF206>,
     ]
     uniform token collection:fence:expansionRule = "explicitOnly"
     delete rel collection:fence:includes = [
@@ -401,6 +403,7 @@ def Scope "CustomTags" (
         </RootNode/meshes/mesh_D36DB89D0F29D1A4>,
         </RootNode/meshes/mesh_C46EF3BF5B8DB719>,
         </RootNode/meshes/mesh_AAB1E312E9FD1D1C>,
+        </RootNode/meshes/mesh_7E3EED91DA92429A>,
     ]
     uniform token collection:marker:expansionRule = "explicitOnly"
     prepend rel collection:marker:includes = [

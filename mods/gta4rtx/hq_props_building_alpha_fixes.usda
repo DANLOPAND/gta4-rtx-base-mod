@@ -195,6 +195,88 @@ over "RootNode"
                 }
             }
         }
+
+        over "mesh_CF21258CC120FA80" (
+            references = None
+        )
+        {
+            def Xform "ref_8f0238cc5346494891dee949f60491de" (
+                prepend references = @./assets/props/building_alpha_fixes/firestairway/floor02.usd@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "World"
+                    {
+                        over "Looks"
+                        {
+                            over "floor_mat"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./assets/props/building_alpha_fixes/firestairway/tex/firestairway_floor_floor_mat_albedo.a.rtex.dds@
+                                    custom asset inputs:metallic_texture = @./assets/props/building_alpha_fixes/firestairway/tex/firestairway_floor_floor_mat_metalness.m.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./assets/props/building_alpha_fixes/firestairway/tex/firestairway_floor_floor_mat_normal_dx_OTH_Normal.n.rtex.dds@
+                                    custom asset inputs:reflectionroughness_texture = @./assets/props/building_alpha_fixes/firestairway/tex/firestairway_floor_floor_mat_roughness.r.rtex.dds@
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_E7C138798D1CF206" (
+            references = None
+        )
+        {
+            def Xform "ref_b04bccd5cb8e44548cae326b7557dac0" (
+                prepend references = @./assets/props/building_alpha_fixes/firestairway/floor01.usd@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "World"
+                    {
+                        over "Looks"
+                        {
+                            over "floor_mat"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./assets/props/building_alpha_fixes/firestairway/tex/firestairway_floor_floor_mat_albedo.a.rtex.dds@
+                                    custom asset inputs:metallic_texture = @./assets/props/building_alpha_fixes/firestairway/tex/firestairway_floor_floor_mat_metalness.m.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./assets/props/building_alpha_fixes/firestairway/tex/firestairway_floor_floor_mat_normal_dx_OTH_Normal.n.rtex.dds@
+                                    custom asset inputs:reflectionroughness_texture = @./assets/props/building_alpha_fixes/firestairway/tex/firestairway_floor_floor_mat_roughness.r.rtex.dds@
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

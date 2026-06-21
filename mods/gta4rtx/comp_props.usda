@@ -433,17 +433,6 @@ over "RootNode"
             }
         }
 
-        over "mat_160611AD039F0D3D"
-        {
-            over "Shader"
-            {
-                custom float inputs:alpha_test_reference_value = 1
-                custom int inputs:alpha_test_type = 4
-                custom bool inputs:blend_enabled = 0
-                custom bool inputs:use_legacy_alpha_state = 0
-            }
-        }
-
         over "mat_F7D22862D05384CF"
         {
             over "Shader"
@@ -470,6 +459,17 @@ over "RootNode"
                 custom float inputs:metallic_constant = 0.72499996
             }
         }
+
+        over "mat_160611AD039F0D3D"
+        {
+            over "Shader"
+            {
+                custom float inputs:alpha_test_reference_value = 1
+                custom int inputs:alpha_test_type = 4
+                custom bool inputs:blend_enabled = 0
+                custom bool inputs:use_legacy_alpha_state = 0
+            }
+        }
     }
 
     over "meshes"
@@ -493,6 +493,14 @@ over "RootNode"
         }
 
         over "mesh_919001AE73286B46"
+        {
+            over "mesh"
+            {
+                custom uniform bool remix_category:alpha_blend_to_cutout = 1
+            }
+        }
+
+        over "mesh_BE7D854CB4DE9615"
         {
             over "mesh"
             {
