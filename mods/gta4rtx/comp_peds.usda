@@ -300,7 +300,8 @@ over "RootNode"
         {
             over "Shader"
             {
-                custom float inputs:reflection_roughness_constant = 0.78999996
+                custom float inputs:metallic_constant = 0.255
+                custom float inputs:reflection_roughness_constant = 0.905
             }
         }
 
@@ -317,6 +318,55 @@ over "RootNode"
             over "Shader"
             {
                 custom float inputs:reflection_roughness_constant = 0.955
+            }
+        }
+
+        over "mat_D54EA5367056DB3D"
+        {
+            over "Shader"
+            {
+                custom float inputs:reflection_roughness_constant = 0.885
+            }
+        }
+
+        over "mat_F73A2252BBBF4254"
+        {
+            over "Shader"
+            {
+                custom float inputs:reflection_roughness_constant = 0.755
+            }
+        }
+
+        over "mat_B9EB95E434799C57"
+        {
+            over "Shader"
+            {
+                custom float inputs:reflection_roughness_constant = 0.84
+            }
+        }
+
+        over "mat_55F52603B2AAF5DB"
+        {
+            over "Shader"
+            {
+                custom float inputs:reflection_roughness_constant = 0.835
+            }
+        }
+
+        over "mat_D182D9F8A89120AE"
+        {
+            over "Shader"
+            {
+                custom float inputs:metallic_constant = 0.65
+                custom float inputs:reflection_roughness_constant = 0.92499995
+            }
+        }
+
+        over "mat_93E19211EA13EF59"
+        {
+            over "Shader"
+            {
+                custom float inputs:reflection_roughness_constant = 0.88
             }
         }
     }

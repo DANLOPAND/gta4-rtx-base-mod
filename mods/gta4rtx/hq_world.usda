@@ -5,7 +5,8 @@
         @./hq_world_broker_safehouse.usda@,
         @./hq_world_bergen.usda@,
         @./hq_world_terrain.usda@,
-        @./hq_world_metal.usda@
+        @./hq_world_metal.usda@,
+        @./hq_world_chainlink.usda@
     ]
     upAxis = "Z"
 )

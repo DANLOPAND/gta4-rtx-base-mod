@@ -1,0 +1,29 @@
+#usda 1.0
+
+def Scope "Looks"
+{
+    def Material "chainlink_light"
+    {
+        token outputs:mdl:surface.connect = </Looks/chainlink_light/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+
+            color3f inputs:diffuse_color_constant = (0.0, 0.0, 0.0)
+            asset inputs:diffuse_texture = @./tex/chainlink03_chainlink_light_albedo.a.rtex.dds@
+            asset inputs:metallic_texture = @./tex/chainlink03_chainlink_light_metalness.m.rtex.dds@
+            asset inputs:normalmap_texture = @./tex/chainlink03_chainlink_light_normal_dx_OTH_Normal.n.rtex.dds@
+            # custom asset inputs:reflectionroughness_texture = @./tex/chainlink03_chainlink_light_roughness.r.rtex.dds@
+            custom float inputs:metallic_constant = 1
+            custom float inputs:reflection_roughness_constant = 0.4
+            custom bool inputs:use_legacy_alpha_state = 0
+
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+}

@@ -12,7 +12,7 @@ def Scope "Looks"
             uniform asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
 
-            color3f inputs:diffuse_color_constant = (0.0, 1.0, 0.0)
+            color3f inputs:diffuse_color_constant = (0.0, 0.0, 0.0)
             asset inputs:diffuse_texture = @./tex/grass atlas.a.rtex.dds@
             asset inputs:normalmap_texture = @./tex/grass atlas normal_OTH_Normal.n.rtex.dds@
             custom asset inputs:reflectionroughness_texture = @./tex/grass atlas roughness.r.rtex.dds@
@@ -21,6 +21,7 @@ def Scope "Looks"
             custom color3f inputs:subsurface_transmittance_color = (0.5199516, 0.21096884, 0.94208497)
             custom float inputs:subsurface_volumetric_anisotropy = -0.1
             custom bool inputs:use_legacy_alpha_state = 0
+            custom bool inputs:enable_emission = 0
 
             token outputs:out (
                 renderType = "material"
@@ -38,7 +39,7 @@ def Scope "Looks"
             uniform asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
 
-            color3f inputs:diffuse_color_constant = (0.0, 0.0, 1.0)
+            color3f inputs:diffuse_color_constant = (0.0, 0.0, 0.0)
             asset inputs:diffuse_texture = @./tex/plants_1_atlas_color.a.rtex.dds@
             asset inputs:normalmap_texture = @./tex/plants_1_atlas_normal_OTH_Normal.n.rtex.dds@
             custom asset inputs:reflectionroughness_texture = @./tex/plants_1_atlas_roughness.r.rtex.dds@
@@ -47,6 +48,7 @@ def Scope "Looks"
             custom color3f inputs:subsurface_transmittance_color = (0.5199516, 0.21096884, 0.94208497)
             custom float inputs:subsurface_volumetric_anisotropy = -0.1
             custom bool inputs:use_legacy_alpha_state = 0
+            custom bool inputs:enable_emission = 0
             
             token outputs:out (
                 renderType = "material"
@@ -64,7 +66,7 @@ def Scope "Looks"
             uniform asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
 
-            color3f inputs:diffuse_color_constant = (1.0, 1.0, 0.0)
+            color3f inputs:diffuse_color_constant = (0.0, 0.0, 0.0)
             asset inputs:diffuse_texture = @./tex/plants_2_atlas_color.a.rtex.dds@
             asset inputs:normalmap_texture = @./tex/plants_2_atlas_normal_OTH_Normal.n.rtex.dds@
             custom asset inputs:reflectionroughness_texture = @./tex/plants_2_atlas_roughness.r.rtex.dds@
@@ -73,7 +75,8 @@ def Scope "Looks"
             custom color3f inputs:subsurface_transmittance_color = (0.5199516, 0.21096884, 0.94208497)
             custom float inputs:subsurface_volumetric_anisotropy = -0.1
             custom bool inputs:use_legacy_alpha_state = 0
-            
+            custom bool inputs:enable_emission = 0
+
             token outputs:out (
                 renderType = "material"
             )
@@ -90,7 +93,7 @@ def Scope "Looks"
             uniform asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
 
-            color3f inputs:diffuse_color_constant = (1.0, 0.0, 0.0)
+            color3f inputs:diffuse_color_constant = (0.0, 0.0, 0.0)
             asset inputs:diffuse_texture = @./tex/plants_6_atlas_ color.a.rtex.dds@
             asset inputs:normalmap_texture = @./tex/plants_6_atlas_normal_OTH_Normal.n.rtex.dds@
             custom asset inputs:reflectionroughness_texture = @./tex/plants_6_atlas_roughness.r.rtex.dds@
@@ -99,6 +102,7 @@ def Scope "Looks"
             custom color3f inputs:subsurface_transmittance_color = (0.5199516, 0.21096884, 0.94208497)
             custom float inputs:subsurface_volumetric_anisotropy = -0.1
             custom bool inputs:use_legacy_alpha_state = 0
+            custom bool inputs:enable_emission = 0
             
             token outputs:out (
                 renderType = "material"

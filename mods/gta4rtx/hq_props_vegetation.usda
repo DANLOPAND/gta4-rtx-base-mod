@@ -27,12 +27,14 @@ over "RootNode"
                     {
                         over "Shader"
                         {
+                            color3f inputs:diffuse_color_constant = (0.0, 0.0, 0.0)
                             custom asset inputs:diffuse_texture = @./assets/props/vegetation/small/m_3292487B530F0C93/tex/plant01_albedo.a.rtex.dds@
                             custom asset inputs:normalmap_texture = @./assets/props/vegetation/small/m_3292487B530F0C93/tex/plant01_normal_dx_OTH_Normal.n.rtex.dds@
                             custom asset inputs:reflectionroughness_texture = @./assets/props/vegetation/small/m_3292487B530F0C93/tex/plant01_roughness.r.rtex.dds@
                             custom float inputs:subsurface_measurement_distance = 0.71999997
                             custom asset inputs:subsurface_transmittance_texture = @./assets/props/vegetation/small/m_3292487B530F0C93/tex/plant01_sss.a.rtex.dds@
                             custom bool inputs:use_legacy_alpha_state = 0
+                            custom bool inputs:enable_emission = 0
                         }
                     }
                 }
