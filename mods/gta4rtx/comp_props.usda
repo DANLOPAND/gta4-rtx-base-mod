@@ -470,6 +470,14 @@ over "RootNode"
                 custom bool inputs:use_legacy_alpha_state = 0
             }
         }
+
+        over "mat_776452B4FFDCFD72"
+        {
+            over "Shader"
+            {
+                custom bool inputs:use_legacy_alpha_state = 0
+            }
+        }
     }
 
     over "meshes"
