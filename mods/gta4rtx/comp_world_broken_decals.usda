@@ -190,28 +190,6 @@ over "RootNode"
 
     over "Looks"
     {
-        over "mat_68F659E21F8FC9E4"
-        {
-            over "Shader"
-            {
-                custom float inputs:alpha_test_reference_value = 0
-                custom int inputs:alpha_test_type = 4
-                custom bool inputs:blend_enabled = 1
-                custom int inputs:blend_type = 0
-                custom bool inputs:inverted_blend = 0
-                custom bool inputs:use_legacy_alpha_state = 0
-            }
-        }
-
-        over "mat_8E6BE9E5851AEA5C"
-        {
-            over "Shader"
-            {
-                custom bool inputs:blend_enabled = 0
-                custom bool inputs:use_legacy_alpha_state = 1
-            }
-        }
-
         over "mat_3B4F2EA66C1243F2"
         {
             over "Shader"
