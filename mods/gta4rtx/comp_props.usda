@@ -471,7 +471,31 @@ over "RootNode"
             }
         }
 
+        over "mat_F05318F08A076F40"
+        {
+            over "Shader"
+            {
+                custom bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
         over "mat_776452B4FFDCFD72"
+        {
+            over "Shader"
+            {
+                custom bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_EB7A37F76FB07CBE"
+        {
+            over "Shader"
+            {
+                custom bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_6172286EB02C1E93"
         {
             over "Shader"
             {
