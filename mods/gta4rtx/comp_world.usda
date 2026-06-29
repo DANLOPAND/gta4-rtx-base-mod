@@ -959,6 +959,24 @@ over "RootNode"
                 }
             }
         }
+
+        over "mesh_247EE4013CDA3CA2"
+        {
+            over "mesh"
+            {
+                custom uniform bool remix_category:alpha_blend_to_cutout = 1
+                custom uniform bool remix_category:decal_Static = 0
+            }
+        }
+
+        over "mesh_BABFB7CA652C2D5D"
+        {
+            over "mesh"
+            {
+                custom uniform bool remix_category:alpha_blend_to_cutout = 1
+                custom uniform bool remix_category:decal_Static = 0
+            }
+        }
     }
 }
 

@@ -27,14 +27,14 @@ over "RootNode"
                     {
                         over "Shader"
                         {
-                            color3f inputs:diffuse_color_constant = (0.0, 0.0, 0.0)
+                            color3f inputs:diffuse_color_constant = (0, 0, 0)
                             custom asset inputs:diffuse_texture = @./assets/props/vegetation/small/m_3292487B530F0C93/tex/plant01_albedo.a.rtex.dds@
+                            custom bool inputs:enable_emission = 0
                             custom asset inputs:normalmap_texture = @./assets/props/vegetation/small/m_3292487B530F0C93/tex/plant01_normal_dx_OTH_Normal.n.rtex.dds@
                             custom asset inputs:reflectionroughness_texture = @./assets/props/vegetation/small/m_3292487B530F0C93/tex/plant01_roughness.r.rtex.dds@
                             custom float inputs:subsurface_measurement_distance = 0.71999997
                             custom asset inputs:subsurface_transmittance_texture = @./assets/props/vegetation/small/m_3292487B530F0C93/tex/plant01_sss.a.rtex.dds@
                             custom bool inputs:use_legacy_alpha_state = 0
-                            custom bool inputs:enable_emission = 0
                         }
                     }
                 }
@@ -167,6 +167,30 @@ over "RootNode"
         {
             def Xform "ref_8448ca039603449090bec9644278308b" (
                 prepend references = @./assets/props/vegetation/small/nature_pack/grass_group06.usda@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+        }
+
+        over "mesh_5B799672443417FB" (
+            references = None
+        )
+        {
+            def Xform "ref_a2af576bb42b401ea2b77a388679d8cc" (
+                prepend references = @./assets/props/vegetation/small/nature_pack/grass_group07.usda@
             )
             {
                 custom bool IsRemixRef = 1

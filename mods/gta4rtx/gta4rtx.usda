@@ -7,8 +7,8 @@
                 double radius = 500
             }
             dictionary Perspective = {
-                double3 position = (-460.65967711110585, -65.76593934096, 12.661380901121525)
-                double3 target = (-610.8723151660884, 337.82873049669286, -156.95949668458022)
+                double3 position = (1286.2214784565467, 1737.8334675549243, 18.400647605577795)
+                double3 target = (316.56111159338417, 3604.007191403742, -426.36192319665975)
             }
             dictionary Right = {
                 double3 position = (0, -500, 0)
@@ -22,10 +22,10 @@
         }
         string lightspeed_layer_type = "workfile"
         dictionary omni_layer = {
-            string authoring_layer = "./comp_props.usda"
+            string authoring_layer = "./hq_props_chainlink.usda"
             dictionary locked = {
+                bool "./deps/captures/0000_miss_fence06.usd" = 1
                 bool "./deps/captures/0_broker_safehouse_day.usd" = 1
-                bool "./deps/captures/222_lamp_2.usd" = 1
                 bool "./deps/captures/__asd_proxy_emnico_cutscene.usd" = 1
                 bool "./deps/captures/asd13.usd" = 1
                 bool "./deps/captures/capture02_small.usd" = 1
@@ -41,7 +41,7 @@
     startTimeCode = 0
     subLayers = [
         @./mod.usda@,
-        @./deps/captures/222_lamp_2.usd@
+        @./deps/captures/0000_miss_fence06.usd@
     ]
     timeCodesPerSecond = 24
     upAxis = "Z"
@@ -425,6 +425,14 @@ def Scope "CustomTags" (
         </RootNode/meshes/mesh_28877B594535C49C>,
         </RootNode/meshes/mesh_3C8D715E54ED7FB2>,
         </RootNode/meshes/mesh_15DCFB2F2F27653E>,
+        </RootNode/meshes/mesh_E511366647897C19>,
+        </RootNode/meshes/mesh_98B0EE337A8C1DC2>,
+        </RootNode/meshes/mesh_A33CB435FFB5C650>,
+        </RootNode/meshes/mesh_50AE74B3787B2A4E>,
+        </RootNode/meshes/mesh_3AD5C263CCC14C87>,
+        </RootNode/meshes/mesh_3044634F5513B878>,
+        </RootNode/meshes/mesh_6F012BCAB3B3CD44>,
+        </RootNode/meshes/mesh_70FE7F5E3612B000>,
     ]
     uniform token collection:marker:expansionRule = "explicitOnly"
     prepend rel collection:marker:includes = [
@@ -441,6 +449,12 @@ def Scope "CustomTags" (
     uniform token collection:temp_hidden:expansionRule = "explicitOnly"
     prepend rel collection:temp_hidden:includes = </RootNode/instances/inst_88B1E8E43171E4F1_0/mesh>
     uniform token collection:vegetation:expansionRule = "explicitOnly"
-    prepend rel collection:vegetation:includes = </RootNode/meshes/mesh_3292487B530F0C93>
+    prepend rel collection:vegetation:includes = [
+        </RootNode/meshes/mesh_3292487B530F0C93>,
+        </RootNode/meshes/mesh_5B799672443417FB>,
+        </RootNode/meshes/mesh_700691BC5DDFDD44>,
+        </RootNode/meshes/mesh_D1AF8A0E33550DB3>,
+        </RootNode/meshes/mesh_BA2F45E5F5F0E2FA>,
+    ]
 }
 

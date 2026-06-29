@@ -214,6 +214,48 @@ over "RootNode"
                 }
             }
         }
+
+        over "mesh_E511366647897C19" (
+            references = None
+        )
+        {
+            def Xform "ref_8c8ed8f08e4d406daa4e30dfb565c72b" (
+                prepend references = @./assets/props/chainlink/01/cap11_single_small.usd@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 0)
+                    float3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "World"
+                    {
+                        over "Looks"
+                        {
+                            over "chainlink_light"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./assets/props/chainlink/01/tex/chainlink03_chainlink_light_albedo.a.rtex.dds@
+                                    custom asset inputs:metallic_texture = @./assets/props/chainlink/01/tex/chainlink03_chainlink_light_metalness.m.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./assets/props/chainlink/01/tex/chainlink03_chainlink_light_normal_dx_OTH_Normal.n.rtex.dds@
+                                    custom float inputs:reflection_roughness_constant = 0.4
+                                    custom asset inputs:reflectionroughness_texture = @@
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
